@@ -7,9 +7,11 @@
 
 import Foundation
 
-enum NSDataAssetError: Error, LocalizedError {
+enum NSDataAssetError: Error {
     case invalidDataAsset
-    
+}
+
+extension NSDataAssetError: LocalizedError {
     var errorDescription: String? {
         switch self {
         case .invalidDataAsset:

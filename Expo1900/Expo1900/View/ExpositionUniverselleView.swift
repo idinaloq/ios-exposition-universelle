@@ -79,7 +79,7 @@ class ExpositionUniverselleView: UIView {
         button.setTitle("한국의 출품작 보러가기", for: .normal)
         button.setTitleColor(UIColor.blue, for: .normal)
         button.addTarget(self, action: #selector(touchUpExpositionItemListButton), for: .touchUpInside)
-        button.addAction(<#T##action: UIAction##UIAction#>, for: <#T##UIControl.Event#>)
+//        button.addAction(<#T##action: UIAction##UIAction#>, for: <#T##UIControl.Event#>)
         
         return button
     }()
@@ -127,11 +127,8 @@ class ExpositionUniverselleView: UIView {
         totalDescriptionLabel.text = data.totalDescription
     }
     
-    private func setRootViewBackground() {
-        backgroundColor = .systemBackground
-    }
-    
     private func configureRootView() {
+        setRootViewBackground()
         addArrangedSubviews(to: buttonStackView, elements: [leftItemImage,
                                                             expositionItemListButton,
                                                             rightItemImage
@@ -143,8 +140,10 @@ class ExpositionUniverselleView: UIView {
                                                              durationLabel,
                                                              totalDescriptionLabel,
                                                              buttonStackView])
-        expositionUniverselleScrollView.addSubview(contentStackView)
-        addSubview(expositionUniverselleScrollView)
+        addSubviews()
+    }
+    
+    private func setRootViewBackground() {
         backgroundColor = .systemBackground
     }
     
@@ -152,6 +151,11 @@ class ExpositionUniverselleView: UIView {
         subviews.forEach {
             superview.addArrangedSubview($0)
         }
+    }
+    
+    private func addSubviews() {
+        expositionUniverselleScrollView.addSubview(contentStackView)
+        addSubview(expositionUniverselleScrollView)
     }
     
     private func configureConstraint() {

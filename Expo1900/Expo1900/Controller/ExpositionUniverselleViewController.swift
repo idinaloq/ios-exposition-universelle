@@ -7,12 +7,7 @@
 import UIKit
 
 final class ExpositionUniverselleViewController: UIViewController, Tapable {
-    private let mainView: ExpositionUniverselleView = {
-        let view = ExpositionUniverselleView()
-//        view.translatesAutoresizingMaskIntoConstraints = false
-        
-        return view
-    }()
+    private let mainView: ExpositionUniverselleView = ExpositionUniverselleView()
     
     override func loadView() {
         view = mainView
@@ -20,10 +15,9 @@ final class ExpositionUniverselleViewController: UIViewController, Tapable {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        configureMainView()
         updateNavigationLabel()
         updateMainViewLabel()
-        
-        mainView.delegate = self
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -34,6 +28,10 @@ final class ExpositionUniverselleViewController: UIViewController, Tapable {
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
         navigationController?.isNavigationBarHidden = false
+    }
+    
+    private func configureMainView() {
+        mainView.delegate = self
     }
     
     private func updateNavigationLabel() {
