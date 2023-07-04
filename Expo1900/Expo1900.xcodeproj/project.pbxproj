@@ -11,6 +11,7 @@
 		788B8C7E2A49953D00081A6F /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 788B8C7D2A49953D00081A6F /* Item.swift */; };
 		78C454312A4D886C00B21BE4 /* JSONDecoder+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78C454302A4D886C00B21BE4 /* JSONDecoder+Extension.swift */; };
 		78C454342A4D894D00B21BE4 /* NSDataAssetError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78C454332A4D894D00B21BE4 /* NSDataAssetError.swift */; };
+		78E9FAA12A5417E100687AA5 /* ExpositionUniverselleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78E9FAA02A5417E100687AA5 /* ExpositionUniverselleView.swift */; };
 		C79FF4B52589F401005FB0FD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C79FF4B42589F401005FB0FD /* AppDelegate.swift */; };
 		C79FF4B72589F401005FB0FD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C79FF4B62589F401005FB0FD /* SceneDelegate.swift */; };
 		C79FF4B92589F401005FB0FD /* ExpositionUniverselleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C79FF4B82589F401005FB0FD /* ExpositionUniverselleViewController.swift */; };
@@ -28,6 +29,7 @@
 		788B8C7D2A49953D00081A6F /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		78C454302A4D886C00B21BE4 /* JSONDecoder+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "JSONDecoder+Extension.swift"; sourceTree = "<group>"; };
 		78C454332A4D894D00B21BE4 /* NSDataAssetError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSDataAssetError.swift; sourceTree = "<group>"; };
+		78E9FAA02A5417E100687AA5 /* ExpositionUniverselleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpositionUniverselleView.swift; sourceTree = "<group>"; };
 		C79FF4B12589F401005FB0FD /* Expo1900.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Expo1900.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C79FF4B42589F401005FB0FD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C79FF4B62589F401005FB0FD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -105,6 +107,7 @@
 				C79FF4BA2589F401005FB0FD /* Main.storyboard */,
 				C79FF4BF2589F404005FB0FD /* LaunchScreen.storyboard */,
 				DC9E376E2A4D775700563254 /* ItemUITableViewCellStyleSubtitle.swift */,
+				78E9FAA02A5417E100687AA5 /* ExpositionUniverselleView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -203,6 +206,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				78C454342A4D894D00B21BE4 /* NSDataAssetError.swift in Sources */,
+				78E9FAA12A5417E100687AA5 /* ExpositionUniverselleView.swift in Sources */,
 				788B8C7E2A49953D00081A6F /* Item.swift in Sources */,
 				DC65F1562A4ECB0100A4B67C /* JSONFile.swift in Sources */,
 				C79FF4B92589F401005FB0FD /* ExpositionUniverselleViewController.swift in Sources */,
