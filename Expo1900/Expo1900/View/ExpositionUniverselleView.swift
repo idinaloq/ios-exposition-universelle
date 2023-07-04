@@ -75,11 +75,11 @@ class ExpositionUniverselleView: UIView {
     }()
     
     private lazy var expositionItemListButton: UIButton = {
-        let button: UIButton = UIButton()
+        let button: UIButton = UIButton(type: .custom)
+        let action: UIAction = UIAction(handler: { _ in self.delegate?.touchUpExpositionItemListButton() })
         button.setTitle("한국의 출품작 보러가기", for: .normal)
         button.setTitleColor(UIColor.blue, for: .normal)
-        button.addTarget(self, action: #selector(touchUpExpositionItemListButton), for: .touchUpInside)
-//        button.addAction(<#T##action: UIAction##UIAction#>, for: <#T##UIControl.Event#>)
+        button.addAction(action, for: .touchUpInside)
         
         return button
     }()
@@ -178,9 +178,5 @@ class ExpositionUniverselleView: UIView {
             contentStackView.bottomAnchor.constraint(equalTo: expositionUniverselleScrollView.bottomAnchor),
             contentStackView.widthAnchor.constraint(equalTo: expositionUniverselleScrollView.widthAnchor)
         ])
-    }
-    
-    @objc private func touchUpExpositionItemListButton() {
-        delegate?.touchUpExpositionItemListButton()
     }
 }
