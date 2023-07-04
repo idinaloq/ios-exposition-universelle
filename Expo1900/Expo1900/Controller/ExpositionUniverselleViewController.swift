@@ -71,7 +71,7 @@ final class ExpositionUniverselleViewController: UIViewController, Tapable {
         ])
     }
     
-    @objc func touchUpExpositionItemListButton() {
+    func touchUpExpositionItemListButton() {
         let expositionItemListViewController: ExpositionItemListViewController = ExpositionItemListViewController()
         navigationController?.pushViewController(expositionItemListViewController, animated: true)
     }
